@@ -1,0 +1,18 @@
+fieldset.fieldset
+{
+    background-color: aliceblue;
+    border-radius: 40px;
+}
+legend.legend
+{
+    font-size: 25px;
+    background-color: #f0f7ff;
+    border: 1px solid #f0f7ff;
+    border-radius: 40px;
+    
+}
+h1.h
+{
+    font-size: 30px;
+    background-color: antiquewhite;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../static/style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+        <script src="../static/script.js"></script>
+    </head>
+    <body>
+        <h1 align="center" class="h">Car Price Prediction</h1><br /><br />
+        <fieldset class="fieldset">
+            <legend class="legend" align="center">Enter your Car Details</legend>
+            <form class="form" action="/submit_form" method="POST">
+                &nbsp;&nbsp;<label>Year:</label>
+                &nbsp;&nbsp;<input type="tel" placeholder="Enter Year" id="year" name="year" required/><br /><br />
+                &nbsp;&nbsp;<label>Mileage:</label>
+                &nbsp;&nbsp;<input type="text" placeholder="Enter Mileage" id="mileage" name="mileage" required/><br /><br />
+                &nbsp;&nbsp;<label>Tax:</label>
+                &nbsp;&nbsp;<input type="text" placeholder="Enter Tax" id="tax" name="tax" required/><br /><br />
+                &nbsp;&nbsp;<label>Mpg:</label>
+                &nbsp;&nbsp;<input type="text" placeholder="Enter Mpg" id="mpg" name="mpg" required/><br /><br />
+                &nbsp;&nbsp;<label>Engine Size:</label>
+                &nbsp;&nbsp;<input type="text" placeholder="Enter Engine Size" id="engine" name="engine" required/><br /><br />
+                &nbsp;&nbsp;
+                <div class="select is-info is-rounded">
+                <select class="select_a" id="fuel_type" name="fuel_type" required>
+                    <option value="default" id="default" selected>Fuel Type</option>
+                    <option>Diesel</option>
+                    <option>Petrol</option>
+                    <option>Electric</option>
+                    <option>Hybrid</option>
+                    <option>Other</option>
+                </select>
+                <p class="help" id="help_a"></p>
+                </div>
+                &nbsp;&nbsp;
+                <div class="select is-info is-rounded">
+                    <select class="select_b" id="transmission" name="transmission" required>
+                    <option value="default" selected>Transmission</option>
+                    <option>Automatic</option>
+                    <option>Semi-automatic</option>
+                    <option>Manual</option>
+                    <option>Other</option>
+                </select>
+                <p class="help" id="help_b"></p>
+                </div>
+                &nbsp;&nbsp;
+                <div class="select is-info is-rounded">
+                <select class="select_c" id="brand" name="brand" required>
+                    <option value="default" selected>Brand</option>
+                    <option>Audi</option>
+                    <option>BMW</option>
+                    <option>Hyundai</option>
+                    <option>Mercedes</option>
+                    <option>Toyota</option>
+                </select>
+                <p class="help" id="help_c"></p>
+                </div><br /><br /><br />&nbsp;&nbsp;
+                <button type="submit" class="button is-info is-rounded" type="button">Submit</button>
+            </form>
+        </fieldset>
+    </body>
+</html>
